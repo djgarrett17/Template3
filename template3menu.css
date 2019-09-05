@@ -1,0 +1,395 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-repeat: no-repeat;
+  
+}
+
+.pagecontainer{
+    /* background-image: url(./DevinImages/homeDevinbg.jpg); */
+    background-color: rgb(146, 224, 255);
+    background-size: 100% 100%;
+    min-width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+
+    "g h i i"
+    "b c d d"
+    "b c d d"
+    "b c d d"
+    "b e d d"
+    "b e d d"
+    "b e d d"
+    "b e d d"
+    "b e f f"
+    "k j m m";
+
+      
+}
+.arrowup {
+    width: 0; 
+    height: 0; 
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    /* border-radius: -20px; */
+    border-bottom: 2100px solid rgba(255, 237, 158, 0.288);
+    /* transform: rotate(180deg); */
+    position: absolute;
+    left: 39%;
+    top: -1300px;
+    z-index: 1;
+    -webkit-animation-name: rotateLamp;  
+    -webkit-animation-iteration-count: infinite;  
+    -webkit-animation-duration: 500s; 
+  }
+  @-webkit-keyframes rotateLamp {  
+    0%  { transform: rotate(25deg); }
+    3%  { transform: rotate(-50deg); }
+    6%  { transform: rotate(50deg); }
+    9%  { transform: rotate(-50deg); }
+    12% { transform: rotate(50deg); }
+    15% { transform: rotate(-50deg); }
+    18% { transform: rotate(50deg); }
+    21% { transform: rotate(-50deg); }
+    24% { transform: rotate(50deg); }
+    27% { transform: rotate(-50deg); }
+    50% { transform: rotate(50deg); }
+    33% { transform: rotate(-50deg); }
+    36% { transform: rotate(50deg); }
+    39% { transform: rotate(-50deg); }
+    42% { transform: rotate(50deg); }
+    45% { transform: rotate(-50deg); }
+    48% { transform: rotate(50deg); }
+    51% { transform: rotate(-50deg); }
+    54% { transform: rotate(50deg); }
+    57% { transform: rotate(-50deg); }
+    60% { transform: rotate(50deg); }
+    63% { transform: rotate(-50deg); }
+    66% { transform: rotate(50deg); }
+    69% { transform: rotate(-50deg); }
+    72% { transform: rotate(50deg); }
+    75% { transform: rotate(-50deg); }
+    78% { transform: rotate(50deg); }
+    81% { transform: rotate(-50deg); }
+    84% { transform: rotate(50deg); }
+    87% { transform: rotate(-50deg); }
+    90% { transform: rotate(50deg); }
+    93% { transform: rotate(-50deg); }
+    96% { transform: rotate(50deg); }
+    100% { transform: rotate(-50deg); }
+  }
+
+
+
+.thetitle{
+    position: absolute;
+    left: 42%;
+    /* transform: translate(0, -5500%); */
+    margin: 20px 0 5px 20px;
+    color: black;
+    z-index: 3;
+    font-size: 40px;
+}
+.homebutton{
+    grid-area: i;
+    justify-self: end;
+    margin: 20px 20px 5px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.appback{
+    grid-area: g;
+    background-color: lightcoral;
+    align-self: end;
+    border: 2px solid black;
+    border-right: none;
+    /* z-index: 2; */
+}
+.soupback{
+    grid-area: h;
+    background-color: lightcoral;
+    align-self: end;
+    border: 2px solid black;
+    /* z-index: 2; */
+}
+.sandback{
+    grid-area: i;
+    background-color: lightcoral;
+    align-self: end;
+    border: 2px solid black;
+    border-left: none;
+    /* z-index: 2; */
+    
+}
+
+#appetizersid{
+    
+    text-align: center;
+    
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px 50px 10px 50px;
+    background-color: whitesmoke;
+    font-family: 'Livvic', sans-serif;
+    
+}
+#soupid{
+    
+    text-align: center;
+   
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px 50px 10px 50px;
+    background-color: whitesmoke;
+    font-family: 'Livvic', sans-serif;
+}
+#saladid{
+    text-align: center;
+    align-self: end;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    margin: 20px 50px 10px 50px;
+    font-family: 'Livvic', sans-serif;
+
+}
+#sandwichesid{
+    
+    text-align: center;
+    
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px 50px 10px 50px;
+    background-color: whitesmoke;
+    font-family: 'Livvic', sans-serif;
+}
+
+.appetizers{
+    grid-area: b;
+    border: 2px solid black;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    padding: 0 10px 0 10px;
+    background-color: lightcoral;
+    z-index: 2;
+}
+.soup{
+    grid-area: c;
+    border: 2px solid black;
+    border-bottom: none;
+    border-top: none;
+    padding: 0 10px 0 10px;
+    background-color: lightcoral;
+    z-index: 2;
+}
+.salad{
+    grid-area: e;
+    border: 2px solid black;
+    border-top: none;
+    border-bottom: none;
+    padding: 0 10px 0 10px;
+    background-color: lightcoral;
+    z-index: 2;
+}
+.sandwiches{
+    grid-area: d;
+    border: 2px solid black;
+    border-left: none;
+    border-bottom: none;
+    border-top: none;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "l r"
+    "l r";
+    padding: 0 10px 0 10px;
+    background-color: lightcoral;
+    z-index: 2;
+
+}
+
+.appetizersgroup{
+    text-align: center;
+    margin: 0 10px 0 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 5px;
+    background-color: whitesmoke;
+    font-family: 'Livvic', sans-serif;
+
+}
+.soupgroup{
+    text-align: center;
+    margin: 0 10px 0 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 5px;
+    background-color: whitesmoke;
+    font-family: 'Livvic', sans-serif;
+    
+}
+.saladgroup{
+    text-align: center;
+    margin: 0 10px 0 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 5px;
+    background-color: whitesmoke;
+    font-family: 'Livvic', sans-serif;
+    
+}
+.sandwichesgroup1{
+    grid-area: l;
+    text-align: center;
+    margin: 0 10px 0 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* border-right: none; */
+    margin-top: 5px;
+    padding: 0 5px 0 5px;
+    background-color: whitesmoke;
+    font-family: 'Livvic', sans-serif;
+    
+}
+.sandwichesgroup2{
+    grid-area: r;
+    text-align: center;
+    margin: 0 10px 0 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* border-left: none; */
+    margin-top: 5px;
+    padding: 0 5px 0 5px;
+    background-color: whitesmoke;
+    font-family: 'Livvic', sans-serif;
+    
+}
+
+.dipsaucecontainer{
+    grid-area: k;
+    background-color: lightcoral;
+    border: 2px solid black;
+    border-top: none;
+    border-right: none;
+    font-family: 'Livvic', sans-serif;
+}
+
+.dressingcontainer{
+    grid-area: j;
+    background: lightcoral;
+    border: 2px solid black;
+    border-top: none;
+    font-family: 'Livvic', sans-serif;
+}
+.sidescontainer{
+    grid-area: f;
+    background-color: lightcoral;
+    border: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    font-family: 'Livvic', sans-serif;
+    padding-top: 20px;
+}
+.drinkscontainer{
+    grid-area: m;
+    background-color: lightcoral;
+    border: 2px solid black;
+    border-top: none;
+    border-left: none;
+    font-family: 'Livvic', sans-serif;
+}
+
+.dipsauce{
+    text-align: center;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+
+}
+
+.dressing{
+    text-align: center;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    
+}
+.sides{
+    text-align: center;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    
+    border-radius: 10px;
+    margin: 5px;
+
+}
+.drinks{
+    text-align: center;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+
+}
+
+#drinksid{
+    color: black;
+}
+#dipsauceid{
+    color: black;
+
+}
+#dressingid{
+    color: black;
+}
+#sidesid{
+    color: black;
+}
+
+#sidesbodyid{
+    color: black;
+    padding: 5px;
+}
+#drinksbodyid{
+    color: black;
+    padding: 5px;
+}
+#dressingbodyid{
+    color: black;
+    padding: 5px;
+}
+#dipsaucebodyid{
+    color: black;
+    padding: 5px;
+}
+
+.descr{
+    font-style: italic;
+}
+.botprice{
+    font-style: italic;
+    transform: translate(0%,-100%);
+}
+
+hr {
+
+    width: 60%;
+    height: 1px;
+    border: 0;
+    border-top: 1px dotted black;
+    /* margin: 30px 0 30px 28px; */
+    padding: 0px 0px 0px 0px;
+    /* z-index: 500; */
+    justify-self: end;
+}
